@@ -1,0 +1,212 @@
+html {
+  height: 100%;
+  overflow: hidden;
+}
+
+body { 
+  margin:0;
+  padding:0;
+	perspective: 1px;
+	transform-style: preserve-3d;
+  height: 100%;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  font-family: Nunito;
+}
+
+h1 {
+   font-size: 250%
+}
+
+.panel { /*basically keeps the 'slide' or image in place*/
+  position: relative; /*making this 'fixed' breaks everything*/
+  padding: 25vh 10%;
+  min-height: 100vh;
+  width: 100vw;
+  box-sizing: border-box;
+  transform-style: inherit; /*renders it in a 3D space*/
+  font-size: 20px;
+  
+}
+
+
+.panel:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left:0;
+  right:0;
+}
+
+.title {
+
+  padding: 5%;
+  border-radius: 5px;
+  background: rgba(240,230,220, .7);
+  
+}
+
+.panel:nth-child(2n) .title {
+  margin-left: 0;
+  margin-right: auto;
+}
+
+.panel:nth-child(2n+1) .title {
+  margin-left: auto;
+  margin-right: 0;
+}
+
+.panel, .panel:before {
+  background: 50% 50% / cover;  
+}
+
+.top {
+  text-align: center;
+  font-size: 175%;
+  color: #fff;
+
+
+}
+
+#title {
+   background-image: url("../img/bluemntn.jpg");
+   background-attachment: fixed;
+}
+
+#panel1:before {
+  background-image: url("");
+  transform: translateZ(-1px) scale(2);
+  z-index:-1;
+  background-color: white;
+}
+#panel2 {
+  background-image: url("");
+  background-attachment: fixed; /*keeps image stationary*/
+}
+#panel2:before {
+  background-image: url("");
+  transform: translateZ(-1px) scale(2);
+  z-index:-1;
+}
+#panel3{
+	background-image: url("../img/street.jpg");
+  	background-attachment: fixed; /*keeps image stationary*/
+}
+#panel3:before {
+	background-image: url("");
+	transform: translateZ(-1px) scale(2);
+	z-index:-1;
+}
+
+#panel4 {
+  background: #222;
+  background-attachment: fixed; /*keeps image stationary*/
+}
+
+/*-----------------------------------------------------------------------------------------------------------*/
+/*body{
+	background-image: url("../img/dark_geometric.png");
+	background-color: ;
+	text-align: center;
+	height: 1000px
+}*/
+nav {
+	position: fixed;
+  	z-index: 2;
+  	width: 100%;
+  	mask-image: linear-gradient(0deg, rgba(200, 200, 200, 0) 0%, #ffffff 25%, #ffffff 75%, rgba(200, 200, 200, 0) 100%);
+  	margin: 0 auto;  
+}
+nav ul {
+  	text-align: center;
+  	background: rgba(255, 255, 255, 0.0);	 
+}
+nav ul li {
+  display: inline-block;
+}
+nav ul li a {
+  	padding: 20px;
+  	text-transform: uppercase;
+  	color: white;
+  	text-decoration: none;
+  	display: block;
+}
+nav ul li a:hover {
+  	box-shadow: 0 0 40px  rgba(255, 255, 255, 0.8), inset 0 0 0px rgba(0, 0, 0, 0.8);
+  	background-color: rgba(255, 255, 255, 0.4);
+  	color: rgba(59, 152, 245, 0.8);
+	display: inline-block;
+	border-radius: ;
+}
+
+
+/*-------------------------------------------------------------------------------------------------------*/
+a.back-to-top {
+	display: none;
+	width: 60px;
+	height: 60px;
+	text-indent: -9999px;
+	position: fixed;
+	z-index: 10;
+	right: 20px;
+	bottom: 20px;
+	background: black url("../img/up-arrow.png") no-repeat center 43%;
+	/*-webkit-border-radius: 30px;
+	-moz-border-radius: 30px;*/
+	border-radius: 3px;
+}
+#name{
+	text-decoration: underline;
+}
+#contactme{
+	text-align: center;
+}
+/*------------------------------------------------------------------------------------------------------*/
+@import url(http://fonts.googleapis.com/css?family=Oswald:400,700,300);
+.centered {
+  margin: 0 auto;
+  text-align: center;
+}
+.uppercase {
+  text-transform: uppercase;
+}
+.bottom-line {
+  border-bottom: 2px solid #c3c3c3;
+}
+::-webkit-resizer {
+  display: none;
+}
+
+section {
+  margin: 0 auto;
+  text-align: center;
+}
+
+form#contact {
+  margin: 0 auto;
+  text-align: center;
+  width: 300px;
+  padding: 20px;
+  background-color: #f7f7f7;
+}
+.form-control {
+  box-shadow: none;
+  border-radius: 0;
+  background-color: #f7f7f7;
+  outline: none;
+  border: none;
+  box-shadow: none !important;
+}
+textarea#message {
+  min-height: 100px;
+  resize: vertical;
+  overflow: hidden;
+  border-bottom: 0px;
+}
+button#send {
+  text-transform: uppercase;
+  border-bottom: 2px solid #c3c3c3;
+  margin-top: 20px;
+  letter-spacing: 4px;
+}
