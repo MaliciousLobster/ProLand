@@ -42,7 +42,7 @@
 	</div>
 
 	<div id="panel1" class="fluid-container panel">
-	  	<div class="row title">
+	  	<div id="opacity" class="row title">
 	    	<div class="col-xs-12">
 	    		<h1>About Me</h1>
 	    		<p>I have experience with coding languages that includes php, html, javascript, and jquery. I've built several projects using combinations of
@@ -52,7 +52,7 @@
 	</div>
 
 	<div id="panel2" class="fluid-container panel">
-	  	<div class="row title">
+	  	<div id="opacity" class="row title">
 	    	<div class="col-xs-12">
 				<h1>Previous Projects</h1>
 				<ul>
@@ -71,10 +71,8 @@
 	</div>
 
 	<div id="panel3" class="fluid-container panel">
-	  	<div class="row title">
-	    	<div id="contactme" class="col-xs-12">
+	  	<div id="opacity" class="row title">
 	    		<h1>Contact me!</h1>
-				<div class="arrow-up"></div>
   					<form id="contact" class="form-horizontal" role="form">
     					<div class="form-group">  
       						<div class="col-xs-12">
@@ -91,7 +89,7 @@
         						<textarea class="form-control" id="message" name="message" placeholder="MESSAGE"></textarea>
      	 					</div>
     					</div>
-    					<button id="send" name="send" class="btn btn-block">send</button>
+    					<button id="send" name="send" class="btn btn-block" href="mailto:Nate.Munsell@gmail.com" >send</button>
   					</form>
   				</div>
 	    	</div>	

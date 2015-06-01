@@ -15,36 +15,41 @@ body {
 }
 
 h1 {
-   font-size: 250%
+   font-size: 250%;
+   text-align: center;
 }
 
 .panel { /*basically keeps the 'slide' or image in place*/
-  position: relative; /*making this 'fixed' breaks everything*/
-  padding: 25vh 10%;
-  min-height: 100vh;
-  width: 100vw;
-  box-sizing: border-box;
-  transform-style: inherit; /*renders it in a 3D space*/
-  font-size: 20px;
+	position: relative; /*making this 'fixed' breaks everything*/
+	padding: 25vh 10%;
+	min-height: 100vh;
+	width: 100vw;
+	box-sizing: border-box;
+	transform-style: inherit; /*renders it in a 3D space*/
+	font-size: 20px;
   
 }
 
 
 .panel:before {
-  content: "";
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  left:0;
-  right:0;
+	content: "";
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left:0;
+	right:0;
 }
 
 .title {
+	background-image: url("../img/dark_geometric.png");
+  	padding: 5%;
+  	border-radius: 5px;
+  	color: white;
+}
 
-  padding: 5%;
-  border-radius: 5px;
-  background: rgba(240,230,220, .7);
-  
+#opacity{
+	opacity: 0.8;
+	border: 1px solid grey;
 }
 
 .panel:nth-child(2n) .title {
@@ -81,16 +86,16 @@ h1 {
   background-color: white;
 }
 #panel2 {
-  background-image: url("");
+  background-image: url("../img/street.jpg");
   background-attachment: fixed; /*keeps image stationary*/
 }
 #panel2:before {
-  background-image: url("");
+  background-image: url("../img/street.jpg");
   transform: translateZ(-1px) scale(2);
   z-index:-1;
 }
 #panel3{
-	background-image: url("../img/street.jpg");
+	background-image: url("");
   	background-attachment: fixed; /*keeps image stationary*/
 }
 #panel3:before {
@@ -134,7 +139,7 @@ nav ul li a {
 }
 nav ul li a:hover {
   	box-shadow: 0 0 40px  rgba(255, 255, 255, 0.8), inset 0 0 0px rgba(0, 0, 0, 0.8);
-  	background-color: rgba(255, 255, 255, 0.4);
+  	background-color: rgba(255, 255, 255, 0.3);
   	color: rgba(59, 152, 245, 0.8);
 	display: inline-block;
 	border-radius: ;
@@ -157,7 +162,7 @@ a.back-to-top {
 	border-radius: 3px;
 }
 #name{
-	text-decoration: underline;
+	
 }
 #contactme{
 	text-align: center;
